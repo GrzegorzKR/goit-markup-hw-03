@@ -11,6 +11,29 @@ body {
   color: var(--font-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 /*===========COMPONENTS===========*/
 button {
    cursor: pointer;
@@ -37,8 +60,6 @@ button {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  text-decoration: none;
-
   letter-spacing: 0.03em;
 
   color: var(--main-color);
@@ -66,10 +87,9 @@ button {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1.333;
-  list-style: none;
-}
+  }
+
 .navigation-link {
-  text-decoration: none;
   margin-right: 46px;
   color: var(--font-color);
 }
@@ -85,7 +105,6 @@ button {
 }
 
 .contact-list {
-  list-style: none;
   position: absolute;
   width: 135px;
   height: 16px;
@@ -93,7 +112,6 @@ button {
   top: 32px;
 }
 .contact-list a {
-  text-decoration: none;
   font-style: normal;
   color: #757575;
  }
@@ -204,7 +222,6 @@ font-weight: bold;
 .offer li {
   width: 370px;
   height: 294px;
-  list-style: none;
   padding-right: 30px;
 }
 
@@ -219,7 +236,6 @@ font-weight: bold;
 }
 .team-list {
   display: flex;
-  list-style: none;
   width: 270px;
   height: 368px;
 }
@@ -256,11 +272,8 @@ footer {
 
   background: #2f303a;
 }
-footer li {
-  list-style: none;
-}
+
 footer a {
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   }
 .logo-footer {
@@ -274,8 +287,7 @@ footer a {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  text-decoration: none;
-
+  
   letter-spacing: 0.03em;
 
   color: var(--main-color);
@@ -328,8 +340,7 @@ footer a {
 }
 .filters-buttons {
   display: flex;
-  list-style: none;
-}
+  }
 
 .filters-button-all {
   position: absolute;
@@ -389,7 +400,6 @@ footer a {
 /*Projects*/
 .projects-list {
   display: flex;
-  list-style: none;
   align-items: center;
   margin-top: 182px;
 }
