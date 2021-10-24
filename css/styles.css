@@ -184,6 +184,7 @@ header {
   padding-left: 215px;
 }
 
+
 .list-strengths th {
   font-family: Roboto;
   font-style: normal;
@@ -195,15 +196,18 @@ header {
   text-align: left;
 }
 .list-strengths td {
+  box-sizing:unset;
   font-family: Roboto;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-
+  min-width: 270px;
   color: #757575;
   padding-right: 30px;
 }
-
+.list-strengths td:last-child{
+  padding-right: 0;
+}
 h2 {
   font-family: var(--main-font);
   font-weight: bold;
