@@ -30,13 +30,6 @@ figure {
   margin: 0;
 }
 
-figcaption {
-  padding-left: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-
 .list {
   list-style: none;
 }
@@ -135,16 +128,16 @@ header {
 
 /* =========== MAIN PAGE HEADER===========*/
 .header {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
   background: #2f303a;
 }
 
 .header-tittle {
-  position: absolute;
   width: 696px;
   height: 120px;
   left: 452px;
@@ -163,12 +156,10 @@ header {
 }
 
 .header button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 350px;
+  margin-top: 30px;
+  padding: 10px 41px;
 
+  
   background: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -187,13 +178,12 @@ header {
 
 /* =========== MAIN SECTION MAIN PAGE===========*/
 /*our strengths*/
-.list-strengths {
-  position: absolute;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
+.strengths {
+  padding-top: 94px;
+  padding-right: 215px;
+  padding-left: 215px;
 }
+
 .list-strengths th {
   font-family: Roboto;
   font-style: normal;
@@ -206,22 +196,14 @@ header {
 }
 .list-strengths td {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 171%;
   letter-spacing: 0.03em;
 
   color: #757575;
+  padding-right: 30px;
 }
 
-.offer {
-  position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 889px;
-}
 h2 {
   font-family: var(--main-font);
   font-weight: bold;
@@ -229,39 +211,39 @@ h2 {
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
+  margin-bottom: 50px;
 }
 .offer-list {
   display: flex;
 }
-.offer li {
-  width: 370px;
-  height: 294px;
-  padding-right: 30px;
+.offer-list-item {
+  margin-right: 30px;
+}
+.offer-list-item:last-child {
+  margin-right: 0;
 }
 
 .team {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 .team-list {
   display: flex;
-  width: 270px;
-  height: 368px;
+  justify-content: center;
+  
 }
 .team-list-item {
   background: #ffffff;
+  margin-right: 30px;
 
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-list-item:last-child {
+  margin-right: 0%;
+}
+
 .team-list-item span {
   font-size: 16px;
   line-height: 1.187;
@@ -275,6 +257,8 @@ h2 {
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.875;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 /*footer*/
@@ -407,5 +391,8 @@ footer a {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 /*=========== END PORTFOLIO ===========*/
