@@ -1,12 +1,12 @@
 Zadanie domowe
 
-    Utwórz repozytorium goit-markup-hw-02.
+    Utwórz repozytorium goit-markup-hw-03.
     Sklonuj utworzone repozytorium i skopiuj do niego pliki poprzedniej pracy.
-    Wykonaj znaczniki HTML do projektowania układu nowej zakładki portfolio zadania domowego #2.
-    Do optymalizacji obrazów skorzystaj z usługi squoosh.
+    Dodaj style geometrii (szerokość, dopełnienia, marginesy i obramowania) oraz pozycjonowanie treści za pomocą Flexbox dla stron układu zadania domowego #3.
     Skonfiguruj GitHub Pages i dodaj link do aktywnej strony do nagłówka repozytorium GitHub.
 
-Kryteria akceptacji projektu przez mentora Projekt
+Kryteria akceptacji projektu przez mentora
+Projekt
 
 «A1» W katalogu głównym projektu znajduje się folder images z obrazami.
 
@@ -14,94 +14,47 @@ Kryteria akceptacji projektu przez mentora Projekt
 
 «A3» Wszystkie style są zapisane w jednym pliku styles.css, który znajduje się w folderze css.
 
-«A4» W nazwach plików nie ma wielkich liter, spacji i transliteracji, a jedynie litery i słowa w
-języku angielskim.
+«A4» W nazwach plików nie ma wielkich liter, spacji i transliteracji, a jedynie litery i słowa w języku angielskim.
 
 «A5» Kod źródłowy jest sformatowany za pomocą Prettier.
 
 «A6» Wszystkie obrazy i zawartość tekstowa są z układu.
 
-«A7» Wszystkie mapy bitowe są optymalizowane przy użyciu squoosh.
+«A7» Wszystkie strony HTML mają normalizator stylu modern-nomalize.
 
-«A8» Kod jest napisany zgodnie z tutorialem. Znaczniki HTML
+«A7» Kod jest napisany zgodnie z tutorialem.
+Stylizacja
 
-«B1» Znaczniki HTML strony Portfolio wpisują się w pliku portfolio.html.
+«B1» Dozwolone jest globalne resetowanie stylów selektora tagu dla elementów <h1>...<h6>, <p> i <ul>.
 
-«B2» Wykonane są znaczniki HTML wszystkich elementów układu.
+«B2» Elementy nie mają marginesów zewnętrznych (właściwość margin), które „przebijają” element nadrzędny (rodzicielski).
 
-«B3» Tagi są używane zgodnie z ich znaczeniem semantycznym.
+«B3» W kolekcjach elementów z jednym wierszem usunięto skrajny lewy lub skrajny prawy margin elementów (jeśli istnieje).
 
-«B4» HTML jest weryfikowany przez walidator bez błędów.
+«B4» Właściwość margin jest używana w przypadku marginesów między dwoma sąsiednimi elementami.
 
-«B5» Nazwy klas są zrozumiałe dla innego programisty.
+«B5» Właściwość padding służy do określenia odstępu między granicą elementu nadrzędnego a jego elementem podrzędnym.
 
-«B6» Nazwy klas nie zawierają wielkich liter, spacji, transliteracji i nazw tagów, a jedynie litery
-i słowa w języku angielskim. Jeśli nazwa klasy składa się z kilku słów, są one oddzielone
-myślnikiem.
+«B6» Rozmiary marginesów zewnętrznych (właściwość margin) i dopełnień wewnętrznych (właściwość padding) elementów są ustawiane dokładnie zgodnie z układem.
 
-«B7» Atrybut href linków nawigacyjnych Studio i Portfolio zawiera względną ścieżkę do plików HTML
-tych stron. Kliknięcie linku powoduje przejście do odpowiedniej strony w bieżącej karcie
-przeglądarki.
+«B7» Utworzono ogólną klasę pomocniczą .container do wyśrodkowywania i ograniczania szerokości zawartości.
 
-«B8» Tagi <img> mają atrybuty wymiarów, co najmniej width i height.
+«B8» Szerokość .container jest zgodna z układem i wynosi 1200px.
 
-«B9» Obrazy są wyeksportowane z układu w formacie jpg.
+«B9» .container otacza zawartość nagłówka, stopki i sekcji. Oznacza to, że jest wewnątrz nich.
 
-«B10» Grupy elementów tego samego typu są gromadzone na listach <ul>.
+«B10» Użyj Flexbox do rozmieszczenia elementów, ale tylko w razie potrzeby. Na przykład w nagłówku, nawigacji, listach w sekcjach itd., czyli tam, gdzie nie można inaczej rozmieścić elementów w poziomie
 
-«B11» Filtr na stronie Portfolio jest tworzony przez listę przycisków, z których każdy ma ustawiony
-atrybut type="button".
+«B11» Ostateczne rozmiary bloków w przeglądarce odpowiadają układowi.
 
-«B12» Znaczniki nagłówka i stopki są takie same na wszystkich stronach.
+«B12» Elementy nie mają ustalonej wysokości, zależy to od ich zawartości.
 
-«B13» Wszystkie czcionki i ich odmiany wymagane dla układu (grubość i styl) są podłączone z usługi
-Google Fonts za pomocą jednego linku. Wymagana waga dla Raleway – 700, a dla Roboto – 400, 500, 700
-i 900.
+«B13» Header ma dolne obramowanie, musisz bardzo powiększyć, aby go zobaczyć.
 
-«B14» Wewnątrz znaczników przycisku nie ma żadnych dodatkowych elementów, takich jak spany lub
-linki. Stylizacja
+«B14» Sekcje są ułożone jedna pod drugą jak stos książek, bez zewnętrznych marginesów.
 
-«C1» Nie ma stylów globalnych dla elementów innych niż <body>.
+«B15» Dla wszystkich sekcji używana jest jedna klasa .section, górne i dolne padding są ustawione na 94px, wypychając zawartość do wnętrza sekcji.
 
-«C2» Do stylizacji służą selektory klasy.
+«B16» Do budowy siatek wykorzystywana jest technika opisana w konspekcie.
 
-«C3» W stylach nie ma !important.
-
-«C4» Elementy interaktywne (przyciski i linki) po najechaniu myszką lub focusie z klawiatury mają
-stan aktywny wskazany w układzie (zmiana koloru).
-
-«С5» Tekst kontaktów w nagłówku i stopce zmienia kolor po najechaniu kursorem i focusie.
-
-«C6» Do przechowywania palety kolorów układu (tekst, tło, zaznaczenie) używane są zmienne CSS.
-
-«С7» Element <body> ma właściwość font-family z dominującą czcionką Roboto w układzie.
-
-«С8» Alternatywne opcje czcionek i typ rodziny (bezszeryfowa) są określone na końcu wyliczenia
-font-family dla elementu <body>.
-
-«С9» Rodzina czcionek Roboto jest wyraźnie określona tylko dla elementu <body>, pozostałe elementy
-go dziedziczą.
-
-«С10» Element <body> ma właściwość color z dominującym w układzie kolorem tekstu. Reszta tekstu
-dziedziczy lub zastępuje tę wartość.
-
-«С11» Rozmiar czcionki (właściwość font-size) wszystkich elementów tekstowych dokładnie odpowiada
-wartościom z układu.
-
-«С12» Wysokość wiersza (właściwość line-height) wszystkich elementów tekstowych dokładnie odpowiada
-wartościom z układu i jest określona jako mnożnik, a nie w px.
-
-«С13» Kolor (właściwość color) wszystkich elementów tekstowych dokładnie odpowiada wartościom z
-układu.
-
-«С14» Waga czcionki (właściwość font-weight) wszystkich elementów tekstowych dokładnie odpowiada
-wartościom z układu.
-
-«С15» Waga czcionki (właściwość font-weight) jest wyraźnie określona tylko wtedy, gdy wartość w
-układzie różni się od domyślnej dla tego elementu w przeglądarce.
-
-«С16» Przyciski mają określoną właściwość cursor z wartością pointer.
-
-«С17» W stylach nie powtarza się domyślnych wartości właściwości ustawionych przez przeglądarkę. Na
-przykład, linki nie muszą mieć cursor: pointer, akapity nie muszą mieć font-style: normal lub
-font-weight: 400.
+«B17» Karty na stronie Portfolio mają obramowanie (właściwość border), ale tylko na dole karty.
