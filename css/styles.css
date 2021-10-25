@@ -178,11 +178,13 @@ header {
 /* =========== MAIN SECTION MAIN PAGE===========*/
 /*our strengths*/
 .strengths {
-  padding-top: 94px;
   padding-right: 215px;
   padding-left: 215px;
 }
 
+.list-strengths {
+  padding-bottom: 94px;
+}
 .list-strengths th {
   font-family: Roboto;
   font-style: normal;
