@@ -184,7 +184,8 @@ header {
 }
 
 .list-strengths {
-  padding-bottom: 94px;
+  text-align: left;
+}
 }
 .list-strengths th {
   font-family: Roboto;
@@ -194,15 +195,13 @@ header {
   line-height: 1.333;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
 }
 .list-strengths td {
-  box-sizing: unset;
+  max-width: 300px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  min-width: 270px;
   color: #757575;
   padding-right: 30px;
 }
@@ -218,8 +217,12 @@ h2 {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.section-offer{
+  padding-top: 0px;
+}
 .offer-list {
   display: flex;
+  justify-content: center;
 }
 .offer-list-item {
   margin-right: 30px;
@@ -228,7 +231,7 @@ h2 {
   margin-right: 0;
 }
 
-.team {
+.section-team {
   background-color: #f5f4fa;
 }
 .team-list {
@@ -288,7 +291,7 @@ footer a {
 .logo-footer > span {
   color: white;
 }
-.footer-cointainer {
+.footer-wrapper {
   margin-left: 215px;
 }
 
