@@ -205,9 +205,7 @@ header {
   color: #757575;
   padding-right: 30px;
 }
-.list-strengths td:last-child {
-  padding-right: 0;
-}
+
 h2 {
   font-family: var(--main-font);
   font-weight: bold;
