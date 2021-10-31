@@ -38,7 +38,10 @@ figure {
   text-decoration: none;
 }
 .container {
-  width: 1600px;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .section {
@@ -65,7 +68,6 @@ header {
 }
 
 .logo-header {
-  padding-left: 215px;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
