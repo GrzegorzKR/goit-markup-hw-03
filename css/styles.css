@@ -6,8 +6,6 @@
 }
 
 body {
-  width: 1600px;
-  margin: 0;
   font-family: var(--main-font);
   color: var(--font-color);
 }
@@ -40,8 +38,11 @@ figure {
 .container {
   width: 1200px;
   padding: 0 15px;
+  height: 100%;
   margin: 0 auto;
-  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .section {
@@ -176,19 +177,25 @@ header {
 
   color: #ffffff;
 }
-/* =========== END MAIN PAGE HEADER===========*/
 
-/* =========== MAIN SECTION MAIN PAGE===========*/
-/*our strengths*/
-.strengths {
-  padding-right: 215px;
-  padding-left: 215px;
+.hero-section {
+  height: 600px;
+  background: #2f303a;
 }
 
-.list-strengths {
-  text-align: left;
-}
-}
+  /* =========== END MAIN PAGE HEADER===========*/
+
+  /* =========== MAIN SECTION MAIN PAGE===========*/
+  /*our strengths*/
+  .strengths {
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+
+  .list-strengths {
+    text-align: left;
+  }
+
 .list-strengths th {
   font-family: Roboto;
   font-style: normal;
@@ -197,6 +204,7 @@ header {
   line-height: 1.333;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: left;
 }
 .list-strengths td {
   max-width: 300px;
@@ -217,7 +225,7 @@ h2 {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.section-offer{
+.section-offer {
   padding-top: 0px;
 }
 .offer-list {
@@ -273,6 +281,10 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+}
+footer .container {
+  justify-content: flex-start;
+  display: block;
 }
 
 footer a {
